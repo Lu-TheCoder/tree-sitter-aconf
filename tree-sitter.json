@@ -6,9 +6,11 @@
       "camelcase": "Aconf",
       "title": "Aconf",
       "scope": "source.aconf",
+      "path": ".",
       "file-types": [
         "aconf"
       ],
+      "highlights": "queries/highlights.scm",
       "injection-regex": "^aconf$",
       "class-name": "TreeSitterAconf"
     }
