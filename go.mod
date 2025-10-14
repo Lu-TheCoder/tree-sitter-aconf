@@ -1,4 +1,4 @@
-module github.com/tree-sitter/tree-sitter-aconf
+module github.com/lu-thecoder/tree-sitter-aconf
 
 go 1.22
 

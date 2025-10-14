@@ -1,13 +1,13 @@
 [package]
 name = "tree-sitter-aconf"
-description = "A tree-sitter grammer for Aconf"
+description = "tree-sitter for Aconf language"
 version = "0.1.0"
 authors = ["LuTheCoder <luthecoder@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 keywords = ["incremental", "parsing", "tree-sitter", "aconf"]
 categories = ["parser-implementations", "parsing", "text-editors"]
-repository = "https://github.com/Lu-TheCoder/tree-sitter-aconf"
+repository = "https://github.com/lu-thecoder/tree-sitter-aconf"
 edition = "2021"
 autoexamples = false
 

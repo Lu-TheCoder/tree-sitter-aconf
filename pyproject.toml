@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tree-sitter-aconf"
-description = "A tree-sitter grammer for Aconf"
+description = "tree-sitter for Aconf language"
 version = "0.1.0"
 keywords = ["incremental", "parsing", "tree-sitter", "aconf"]
 classifiers = [
@@ -19,7 +19,7 @@ license.text = "MIT"
 readme = "README.md"
 
 [project.urls]
-Homepage = "https://github.com/Lu-TheCoder/tree-sitter-aconf"
+Homepage = "https://github.com/lu-thecoder/tree-sitter-aconf"
 
 [project.optional-dependencies]
 core = ["tree-sitter~=0.24"]

@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.13)
 
 project(tree-sitter-aconf
         VERSION "0.1.0"
-        DESCRIPTION "A tree-sitter grammer for Aconf"
-        HOMEPAGE_URL "https://github.com/tree-sitter/tree-sitter-aconf"
+        DESCRIPTION "tree-sitter for Aconf language"
+        HOMEPAGE_URL "https://github.com/lu-thecoder/tree-sitter-aconf"
         LANGUAGES C)
 
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)

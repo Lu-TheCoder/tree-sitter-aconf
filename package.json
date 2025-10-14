@@ -1,8 +1,8 @@
 {
   "name": "tree-sitter-aconf",
   "version": "0.1.0",
-  "description": "A tree-sitter grammer for Aconf",
-  "repository": "https://github.com/Lu-TheCoder/tree-sitter-aconf",
+  "description": "tree-sitter for Aconf language",
+  "repository": "https://github.com/lu-thecoder/tree-sitter-aconf",
   "license": "MIT",
   "author": {
     "name": "LuTheCoder",

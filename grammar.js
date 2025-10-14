@@ -1,5 +1,5 @@
 /**
- * @file A tree-sitter grammer for Aconf
+ * @file tree-sitter for Aconf language
  * @author LuTheCoder <luthecoder@gmail.com>
  * @license MIT
  */
@@ -7,7 +7,6 @@
 /// <reference types="tree-sitter-cli/dsl" />
 // @ts-check
 
-// grammar.js
 module.exports = grammar({
   name: 'aconf',
 

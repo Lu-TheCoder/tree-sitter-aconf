@@ -3,7 +3,7 @@ $(error Windows is not supported)
 endif
 
 LANGUAGE_NAME := tree-sitter-aconf
-HOMEPAGE_URL := https://github.com/Lu-TheCoder/tree-sitter-aconf
+HOMEPAGE_URL := https://github.com/lu-thecoder/tree-sitter-aconf
 VERSION := 0.1.0
 
 # repository

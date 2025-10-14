@@ -1,4 +1,4 @@
-"""A tree-sitter grammer for Aconf"""
+"""tree-sitter for Aconf language"""
 
 from importlib.resources import files as _files
 

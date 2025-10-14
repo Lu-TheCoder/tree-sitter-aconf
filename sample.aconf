@@ -1,41 +1,8 @@
-// Application config file
-app_name = "My App"
-frame_allocator_size = 203
-manifest_file_path = "../path"
+name = "lu"
+health = 234
 
 windows: [
     {
-        resolution = [1280, 720],
-        position = [100, 100],
-        name = "main_window",
-        title = "Overdrive: 2089"
-    }
-]
-
-systems: [
-    {
-        name="asset",
-        config: {
-            max_asset_count = 2049
-        }
-    },
-    {
-        name="audio",
-        config: {
-            backend_plugin_name = "engine.plugin.audio.openal",
-            audio_channel_count = 9,
-            categories: [
-                {
-                    name = "world_sounds",
-                    volume = 1.0,
-                    channel_ids = [0,1,2,3,4,5]
-                },
-                 {
-                    name = "ui_sounds",
-                    volume = 1.0,
-                    channel_ids = [5]
-                },
-            ]
-        }
+        name = "name"
     }
 ]
