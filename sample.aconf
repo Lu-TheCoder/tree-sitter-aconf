@@ -5,4 +5,8 @@ windows: [
     {
         name = "name"
     }
+    {
+        name = "name"
+        name = "name"
+    }
 ]

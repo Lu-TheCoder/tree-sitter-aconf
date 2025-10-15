@@ -27,3 +27,5 @@
 
 ; Errors
 (ERROR) @error
+
+(_missing_comma) @error
