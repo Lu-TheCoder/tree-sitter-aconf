@@ -114,23 +114,6 @@
       "type": "STRING",
       "value": "null"
     },
-    "_missing_comma": {
-      "type": "PREC",
-      "value": -1,
-      "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "SYMBOL",
-            "name": "_value"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "_value"
-          }
-        ]
-      }
-    },
     "array": {
       "type": "SEQ",
       "members": [
@@ -145,17 +128,8 @@
               "type": "SEQ",
               "members": [
                 {
-                  "type": "CHOICE",
-                  "members": [
-                    {
-                      "type": "SYMBOL",
-                      "name": "_value"
-                    },
-                    {
-                      "type": "SYMBOL",
-                      "name": "_missing_comma"
-                    }
-                  ]
+                  "type": "SYMBOL",
+                  "name": "_value"
                 },
                 {
                   "type": "REPEAT",
@@ -167,17 +141,8 @@
                         "value": ","
                       },
                       {
-                        "type": "CHOICE",
-                        "members": [
-                          {
-                            "type": "SYMBOL",
-                            "name": "_value"
-                          },
-                          {
-                            "type": "SYMBOL",
-                            "name": "_missing_comma"
-                          }
-                        ]
+                        "type": "SYMBOL",
+                        "name": "_value"
                       }
                     ]
                   }
@@ -221,17 +186,8 @@
               "type": "SEQ",
               "members": [
                 {
-                  "type": "CHOICE",
-                  "members": [
-                    {
-                      "type": "SYMBOL",
-                      "name": "_object_entry"
-                    },
-                    {
-                      "type": "SYMBOL",
-                      "name": "_missing_comma"
-                    }
-                  ]
+                  "type": "SYMBOL",
+                  "name": "_object_entry"
                 },
                 {
                   "type": "REPEAT",
@@ -243,17 +199,8 @@
                         "value": ","
                       },
                       {
-                        "type": "CHOICE",
-                        "members": [
-                          {
-                            "type": "SYMBOL",
-                            "name": "_object_entry"
-                          },
-                          {
-                            "type": "SYMBOL",
-                            "name": "_missing_comma"
-                          }
-                        ]
+                        "type": "SYMBOL",
+                        "name": "_object_entry"
                       }
                     ]
                   }

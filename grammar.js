@@ -60,18 +60,12 @@ module.exports = grammar({
     boolean: $ => choice('true', 'false'),
     null: $ => 'null',
 
-    _missing_comma: $ => prec(-1, seq(
-      $._value,
-      $._value
-    )),
-    
-
     // Arrays: [ value, value, ... ]
     array: $ => seq(
       '[',
       optional(seq(
-        choice($._value, $._missing_comma),
-        repeat(seq(',', choice($._value, $._missing_comma))),
+        $._value,
+        repeat(seq(',', $._value)),
         optional(',')
       )),
       ']'
@@ -82,8 +76,8 @@ module.exports = grammar({
     object: $ => seq(
       '{',
       optional(seq(
-        choice($._object_entry, $._missing_comma),
-        repeat(seq(',', choice($._object_entry, $._missing_comma))),
+        $._object_entry,
+        repeat(seq(',', $._object_entry)),
         optional(',')
       )),
       '}'

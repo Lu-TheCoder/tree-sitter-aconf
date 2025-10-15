@@ -126,35 +126,11 @@
       "required": false,
       "types": [
         {
-          "type": "array",
-          "named": true
-        },
-        {
           "type": "assignment",
           "named": true
         },
         {
-          "type": "boolean",
-          "named": true
-        },
-        {
           "type": "labelled_value",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number",
-          "named": true
-        },
-        {
-          "type": "object",
-          "named": true
-        },
-        {
-          "type": "string",
           "named": true
         }
       ]

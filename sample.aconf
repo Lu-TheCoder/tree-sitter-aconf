@@ -4,9 +4,9 @@ health = 234
 windows: [
     {
         name = "name"
-    }
+    },
     {
-        name = "name"
+        name = "name",
         name = "name"
     }
 ]
