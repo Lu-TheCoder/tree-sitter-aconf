@@ -24,3 +24,6 @@
   "{"
   "}"
 ]  @punctuation.bracket
+
+; Errors
+(ERROR) @error
