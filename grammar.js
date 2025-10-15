@@ -12,8 +12,7 @@ module.exports = grammar({
 
   extras: $ => [
     /\s/,            // whitespace
-    $.comment,       // support // comments
-    $.block_comment, // support /* ... */ comments
+    $.comment,       // support // and /* */ comments
     /\\\r?\n/,       // line continuations
   ],
 
@@ -88,10 +87,16 @@ module.exports = grammar({
       $.labelled_value    // key: value (including arrays and objects)
     ),
 
-    // // comment
-    comment: $ => token(seq('//', /.*/)),
-
-    // /* block comment */ (not nested)
-    block_comment: $ => token(/\/\*[^*]*\*+([^\/*][^*]*\*+)*\//),
+    comment: $ => token(choice(
+      // Single-line comment: // ...
+      seq('//', /.*/),
+    
+      // Multi-line comment: /* ... */
+      seq(
+        '/*',
+        /[^*]*\*+([^/*][^*]*\*+)*/,  // any non-* content, repeated
+        '*/'
+      )
+    )),
   }
 });

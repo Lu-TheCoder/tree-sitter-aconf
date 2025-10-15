@@ -3,7 +3,6 @@
 
 (key) @constant
 (comment) @comment
-(block_comment) @comment
 (number) @number
 (string) @string
 (null) @constant.builtin
