@@ -13,6 +13,7 @@ module.exports = grammar({
   extras: $ => [
     /\s/,            // whitespace
     $.comment,       // support // comments
+    $.block_comment, // support /* ... */ comments
     /\\\r?\n/,       // line continuations
   ],
 
@@ -54,8 +55,8 @@ module.exports = grammar({
     // "strings"
     string: $ => /"([^"\\]|\\.)*"/,
 
-    // Numbers (integer or float)
-    number: $ => /-?\d+(\.\d+)?/,
+    // Numbers (integers and decimals like 1, 1., .5, 1.0)
+    number: $ => /-?(?:\d+\.\d*|\.\d+|\d+)/,
 
     boolean: $ => choice('true', 'false'),
     null: $ => 'null',
@@ -89,5 +90,8 @@ module.exports = grammar({
 
     // // comment
     comment: $ => token(seq('//', /.*/)),
+
+    // /* block comment */ (not nested)
+    block_comment: $ => token(/\/\*[^*]*\*+([^\/*][^*]*\*+)*\//),
   }
 });
